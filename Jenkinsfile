@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/obieh/webhook-jenkins-build-demo.git'
+                git branch: 'main', url: 'https://github.com/obieh/webhook-jenkins-build-demo.git'
             }
         }
 
